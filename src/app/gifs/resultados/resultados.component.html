@@ -1,1 +1,14 @@
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas reiciendis ad sunt, vel sit suscipit, consectetur vero quisquam veniam dignissimos eum ullam. Consequuntur suscipit quaerat odit porro laudantium cum ea!
+<div class="row">
+    <div
+    *ngFor="let res of resultados"
+    class="col-md-4 col-sm-6 animate__animated animate__fadeIn animate__delay-1s">
+        <div class="card">
+            <img [src]="res.images.downsized_medium.url" [alt]="res.title" class="card-img-top">
+            <div class="card-body">
+                <p class="card-text">
+                    {{res.images.downsized_medium.url}}
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
